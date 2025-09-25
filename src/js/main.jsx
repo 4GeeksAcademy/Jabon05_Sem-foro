@@ -9,10 +9,13 @@ import "bootstrap"
 import '../styles/index.css'
 
 // components
-import Home from './components/Home';
+import {TrafficLight} from './components/Semaforo';
 
-ReactDOM.createRoot(document.getElementById('root')).render(
+const root = ReactDOM.createRoot(document.querySelector('#root'));
+root.render(<TrafficLight />);
+
+/*ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <Home/>
+    <TrafficLight/>
   </React.StrictMode>,
-)
+)*/
